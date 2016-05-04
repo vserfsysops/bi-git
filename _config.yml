@@ -1,0 +1,6 @@
+url: http://binstitute.org
+name: Bhaktivedanta Instititute
+excerpt_separator: <!--more-->
+sass:
+    sass_dir: _scss
+    style: compressed
