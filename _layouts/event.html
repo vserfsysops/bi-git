@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="page-wrapper">
+  <header class="page-heading clearfix">
+    <h1 class="heading-title pull-left">Events</h1>
+    <div class="breadcrumbs pull-right">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-label">You are here:</li>
+        <li><a href="../index.html">Home</a><i class="fa fa-angle-right"></i></li>
+        <li><a href="../events.html">Events</a><i class="fa fa-angle-right"></i></li>
+        <li class="current">{{page.title}}</li>
+      </ul>
+    </div><!--//breadcrumbs-->
+  </header>
+  <div class="page-content">
+    <div class="row page-row">
+      <div class="jobs-wrapper col-md-8 col-sm-7">
+        <h3 class="title">{{page.title}}</h3>
+        <!-- <div class="box box-border page-row">
+          <ul class="list-unstyled">
+            <li><strong>Job Ref:</strong> CG02937</li>
+            <li><strong>Department:</strong> Computer Science</li>
+            <li><strong>Location:</strong> College Green</li>
+            <li><strong>Salary:</strong> £35,000 - £45,000</li>
+            <li><strong>Hours:</strong> Full time</li>
+            <li><strong>Closing date:</strong> 25 Oct 2014</li>
+            <li><strong>Job Application Form:</strong> <a href="job-single.html#">Download</a></li>
+          </ul>
+        </div> -->
+        {% for paragraph in page.description %}
+          <p>{{paragraph}}</p>
+        {% endfor %}
+
+      </div><!--//jobs-wrapper-->
+    </div><!--//page-row-->
+    <div class="row page-row">
+      <div class="jobs-wrapper col-md-8 col-sm-7">
+      {{ content }}
+      </div>
+    </div>
+  </div><!--//page-content-->
+</div><!--//page-->
