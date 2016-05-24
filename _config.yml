@@ -5,5 +5,6 @@ sass:
   sass_dir: _scss
   style: compressed
 imgur:
-  id: e32667ad3e34ce3
+  clientId: e32667ad3e34ce3
   secret: a94e80feaa51d1af14bddfe8e572d32e96243adb
+  tempAlbumId: BWPjU
